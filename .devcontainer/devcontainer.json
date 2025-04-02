@@ -1,4 +1,18 @@
 {
   "image": "vnmd/neurodesktop:2025-03-14",
-  "features": {}
+  "features": {
+  },
+  "forwardPorts": [
+    8888
+  ],
+  "containerUser": "root",
+  "privileged": true,
+  "containerEnv": {
+    "NB_UID": "1000",
+    "NB_GID": "1000",
+    "NEURODESKTOP_VERSION": "2025-03-14"
+  },
+  "postAttachCommand": {
+    "jupyer": "start-notebook.sh"
+  }
 }
