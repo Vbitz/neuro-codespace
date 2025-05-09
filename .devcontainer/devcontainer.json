@@ -1,7 +1,7 @@
 {
   "name": "Neurocontainers Build Environment",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "postCreateCommand": "python -m pip install --upgrade pip && python -m pip install neurodocker",
+  "postCreateCommand": "python3 -m pip install --upgrade pip && python3 -m pip install -r requirements.txt",
   "features": {},
   "customizations": {
     "vscode": {
